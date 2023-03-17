@@ -7,10 +7,10 @@
 */
 int main(void)
 { 
-(unsigned long)sizeof(d));
-(unsigned long)sizeof(a));
-(unsigned long)sizeof(b));
-(unsigned long)sizeof(c));
-(unsigned long)sizeof(f));
+sizeof(d));
+sizeof(a));
+sizeof(b));
+sizeof(c));
+sizeof(f));
 return (0)
 }

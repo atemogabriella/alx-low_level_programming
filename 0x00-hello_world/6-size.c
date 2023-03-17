@@ -1,4 +1,3 @@
-{
 #include <stdio.h>
 
 /**
@@ -22,4 +21,4 @@ Printf("Size of a float: %d byte(s)\n", (unsigned long)sizeo(f));
 
 return (0);
 
-}}
+}

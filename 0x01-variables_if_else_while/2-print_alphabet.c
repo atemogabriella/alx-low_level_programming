@@ -9,10 +9,14 @@
 */
 int main(void)
 {
-	char n;
-
-	for (n = 'a'; 'z'; n++)
-		putchar(n);
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+	{
+		for (i = 0; i < 26; i++);
+	}
+	{
+		putchar(alp[i]);
+	}
 
 	putchar('\n');
 

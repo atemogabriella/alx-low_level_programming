@@ -1,31 +1,31 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
 * main - Entry point
-*
-*Return:Always 0 (Success)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-	int a;
+	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	printf("Enter an integer number\n");
-        scanf("%d", &a);
-	if(a > 0)
+	n = rand () - RAND_MAX / 2;
+	if (n > 0)
 	{
-                printf("%d is positive\n", a);
+		printf("%d is positive/n", n);
 	}
-	else if(a < 0)
+
+	if (n < 0)
 	{
-		printf("%d is negative\n", a);
-        }
-        else
+		printf("%d is negative/n", n);
+	}
+
+	else if (n == 0)
 	{
-                printf("%d is zero\n", a);
-        }
+		printf("%d is zero/n", n);
+	}
 
 	return (0);
 }

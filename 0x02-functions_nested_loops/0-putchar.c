@@ -8,14 +8,8 @@
 */
 int main(void)
 {
-	int c;
-
-	c = getchar();
-	while (c != EOF)
-	{
-		putchar(c);
-		c = getchar();
-	}
+	putchar('_putchar');
+	putchar("\n");
 
 	return (0);
 }

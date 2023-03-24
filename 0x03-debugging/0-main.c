@@ -10,7 +10,7 @@ int main(void)
 	int i;
 
 	i = 0;
-	zero(i);
+	positive_negarive(i);
 
 	return (0);
 }

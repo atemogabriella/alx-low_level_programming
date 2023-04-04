@@ -8,9 +8,10 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int m;
+
 	while (*haystack)
 	{
-		for(m = 0; needle[m]; m++)
+		for (m = 0; needle[m]; m++)
 		{
 			if (*haystack == needle['\0'])
 			return (haystack);

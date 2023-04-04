@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
+
 /**
  * _strpbrk - String search area
- * @s: character string area
- * @accept: byte match area
+ * @s: memory area to be filled
+ * @accept: character to be copied
  * Return: byte matched in string
  */
 char *_strpbrk(char *s, char *accept)
@@ -17,6 +16,8 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*s == accept[r])
 				return (s);
-			else
-				return (0);
+		}
+		s++;
+	}
+	return (0);
 }

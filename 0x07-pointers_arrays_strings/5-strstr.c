@@ -9,8 +9,8 @@ char *_strstr(char *haystack, char *needle)
 {
 	int m;
 
-	if(*needle == 0)
-		return(haystack);
+	if (*needle == 0)
+		return (haystack);
 
 	while (*haystack)
 	{

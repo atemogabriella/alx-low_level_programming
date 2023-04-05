@@ -20,12 +20,9 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			else if (accept[r+1 == '\0'])
-			return (x);
+			return (r);
 		}
-
 		s++;
 	}
-
-	return (x);
-
+	return (r);
 }

@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * _atoi - character conversion area
- *@s: character to be changed to a string
- *Return: string after conversion
+ * @s: character to be converted
+ * Return: integer changed from character
  */
 int _atoi(char *s);
-

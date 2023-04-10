@@ -8,11 +8,12 @@
  */
 int main(int argc, char **argv)
 {
-	int b;
+	int s;
 
-	for (b = 0; b < argc; b++)
+	for (s = 0; s < argc; s++)
 	{
-		  printf("%d : %s\n" , b, argv[b]);
+		printf("%s\n", argv[s]);
 	}
 	return (0);
 }
+

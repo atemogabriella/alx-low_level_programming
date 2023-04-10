@@ -4,4 +4,7 @@
  * @s: character to be converted
  * Return: integer changed from character
  */
-int _atoi(char *s);
+int _atoi(char *s)
+{
+	return (*s);
+}

@@ -4,4 +4,7 @@
  * @c: character to be checked whether it is an alphabet or not
  * Return: character checked
  */
-int _isalpha(int c);
+int _isalpha(int c)
+{
+	return (c);
+}

@@ -6,8 +6,11 @@
  * @argv: character pointers area
  * Return: 0
  */
-int main(int argc, char __attribute__((__unused__)) **argv)
+int main(int argc, char **argv)
 {
-        printf("%d\n", argc - 1);
-        return (0);
-}
+	int g, k;
+
+	for (g = 0; g < argc; g++)
+	
+		k = k * argv[g]
+

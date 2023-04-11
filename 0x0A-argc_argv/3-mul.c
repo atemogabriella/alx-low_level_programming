@@ -7,7 +7,7 @@
  * @argv: character pointers area
  * Return: 0
  */
-int main( int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int g;
 	int k = 1;

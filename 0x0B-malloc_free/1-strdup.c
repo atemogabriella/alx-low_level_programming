@@ -19,12 +19,12 @@ char *_strdup(char *str)
 	}
 
 
-	if (str == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	q = malloc(size * sizeof(char));
+	q = malloc((size + 1) * sizeof(char));
 
 	if (q == NULL)
 	{

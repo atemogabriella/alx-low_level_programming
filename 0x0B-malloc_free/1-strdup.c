@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	int size = 0;
 	int r;
 
-	while (*q != 0)
+	while (*q != '\0')
 	{
 		size++;
 		q++;

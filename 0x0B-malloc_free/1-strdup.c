@@ -11,11 +11,12 @@ char *_strdup(char *str)
 	char *q = str;
 	int size = 0;
 	int r;
+	char *k;
 
-	while (*q != '\0')
+	while (*k != '\0')
 	{
 		size++;
-		q++;
+		k++;
 	}
 
 

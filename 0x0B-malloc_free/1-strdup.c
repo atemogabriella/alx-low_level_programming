@@ -11,12 +11,12 @@ char *_strdup(char *str)
 	char *q = str;
 	int size = 0;
 	int r;
-	char *k;
+	char *q;
 
-	while (*k != '\0')
+	while (*q != '\0')
 	{
 		size++;
-		k++;
+		q++;
 	}
 
 
@@ -25,7 +25,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	q = malloc((size + 1) * sizeof(char));
+	q = malloc((size * r + 1) * sizeof(char));
 
 	if (q == NULL)
 	{

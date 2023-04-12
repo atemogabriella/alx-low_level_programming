@@ -18,10 +18,6 @@ char *_strdup(char *str)
 		q++;
 	}
 
-	if (size == 0)
-	{
-		return (NULL);
-	}
 
 	if (str == 0)
 	{

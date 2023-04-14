@@ -10,45 +10,43 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int l = 0, m = 0, r = 0, i = 0;
+	unsigned int l = 0, m = 0, i = 0;
 	char *q;
 
-	while (s1 != NULL && s1[l] != '\0')
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	while (s1[l] != '\0')
 	{
 		l++;
 	}
-
-	while (s2 != NULL && s2[m] != '\0')
+	while (s2[m] != '\0')
 	{
 		m++;
 	}
-
-	if (n >= m)
+	if (n < m)
 	{
-		r = l + m;
+		m = n;
 	}
-
-	else
-	{
-		r = i + n;
-	}
-
-	q = malloc((l + m) * sizeof(char) * r + 1);
-
+	q = malloc(sizeof(char) * (l + m + 1));
 	if (q == NULL)
 	{
 		return (NULL);
 	}
-
-	for (l = 0; s1[l] != '\0' && s1 != NULL ; l++)
+	for (i = 0; i < l; i++)
 	{
-		q[l] = s1[l];
+		q[i] = s1[i];
 	}
-
-	for (m = 0; s2[m] != '\0' && s2 != NULL ; m++)
+	for (; i < l + m; i++)
 	{
-		q[l + m] = s2[m];
+		q[i] = s2[i - l];
 	}
+	q[i] = '\0';
 	return (q);
 }
 

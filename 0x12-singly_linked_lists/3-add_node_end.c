@@ -27,7 +27,8 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	/*Set length of the string*/
 
-	for (new_node->len = 0; new_node->str[new_node->len]; new_node->len++);
+	for (new_node->len = 0; new_node->str[new_node->len]; new_node->len++)
+	;
 	/* If the list is empty, make the new node the head*/
 
 	if (*head == NULL)

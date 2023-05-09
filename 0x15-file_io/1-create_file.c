@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 		z++;
 
 		q = write(f, text_content, z);
-		
+
 		if (q == -1 || q < z)
 		{
 			close(f);
